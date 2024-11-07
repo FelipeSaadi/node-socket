@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div class="hidden flex-col gap-4 items-center justify-center h-[90vh] w-full">
+    <div id="login-page" class="flex-col gap-4 items-center justify-center h-[90vh] w-full">
         <h1 class="text-xl font-semibold">Qual seu nome?</h1>
-        <input class="w-full max-w-[400px] px-2 h-9 border bg-zinc-100 border-zinc-400 rounded-md" type="text"
-            name="name">
+        <input id="name-input" class="w-full max-w-[400px] px-2 h-9 border bg-zinc-100 border-zinc-400 rounded-md"
+            type="text" name="name" value="">
     </div>
 
-    <div class="flex flex-col h-[100vh] w-full">
+    <div id="chat-page" class="flex-col h-[100vh] w-full">
         <div id="chat-area" class="flex flex-1 ">
             <ul class="flex flex-col gap-1 flex-1 px-4 py-2 bg-zinc-200 max-h-[calc(100vh-52px)] overflow-y-auto">
                 <li class="text-zinc-500 italic">
@@ -44,7 +44,7 @@
                 </li>
             </ul>
         </div>
-        <div id="chat-input" class="flex p-2">
+        <div id="chat-input" class="p-2">
             <input class="w-full h-9 p-2 outline-none" type="text" name="message" placeholder="Digite uma mensagem">
         </div>
     </div>
